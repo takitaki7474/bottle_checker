@@ -1,0 +1,174 @@
+
+.title{
+  height:40px;
+  font-size:20pt;
+  background-color:#e2ae60;
+  padding-left:30px;
+  border-bottom: solid 3px #9e7d3d;
+
+}
+
+.discription{
+  font-size:20px;
+  font-weight:600;
+  margin:15px 0px;
+}
+
+.upload{
+  font-weight:900;
+  font-size:30px;
+  padding:20px 0px;
+}
+
+#wrapper{
+  width: 1100px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+#main{
+  width: 550px;
+  float:left;
+}
+
+#sub{
+  width:500px;
+  float:right;
+  border: solid 7px #d4b9f7;
+  padding:10px
+}
+
+.sub_1_2{
+  width:500px;
+  height:230px;
+  margin-bottom:20px;
+  border-bottom: solid 3px #d4b9f7;
+}
+
+.sub_1{
+  width:150px;
+  margin-top:30px;
+  float:left;
+}
+
+.sub_2{
+  width:330px;
+  float:right;
+}
+
+.ans{
+  color:#f70000;
+}
+
+.not_detect{
+  font-size:30px;
+  font-weight:600;
+}
+
+.table{
+  border: solid 2px #f513f9;
+  background-color:#ffc1ef;
+  height:120px;
+  width:330px;
+  margin:0;
+}
+
+.score{
+  width:300px;
+  float:left;
+  height: 30px;
+  border-bottom: solid 2px #cc02ff;
+  margin-left:20px;
+  margin-top:5px;
+}
+
+#result{
+  width:330px;
+  height:100px;
+}
+
+.result_str{
+  float:left;
+  height: 30px;
+  font-size:30px;
+  font-weight:700;
+  margin: 10px 0px 0px 0px;
+}
+
+.result{
+  float:left;
+  height: 30px;
+  font-size:30px;
+  font-weight:700;
+  margin: 10px 0px 0px 20px;
+}
+
+.prob{
+  float: right;
+  margin:4px;
+  font-weight:700;
+}
+
+.bottle_name{
+  float: left;
+  margin: 4px;
+  font-weight:700;
+}
+
+.detected_image{
+  width : 550px;
+  padding:7px;
+  background-color: #ffd68c
+}
+
+.cut_img{
+  width:150px;
+}
+
+
+.square_btn{
+    display: inline-block;
+    position: relative;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 5px #36528c;/*ボタン色より暗めに*/
+    border-right: solid 5px #5375bd;/*ボタン色より暗めに*/
+}
+
+.square_btn:before{
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 0 6px 6px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #FFF;
+}
+
+.square_btn:after{
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -5px;
+    width: 0;
+    height: 0;
+    border-width: 0px 6px 6px 0px;
+    border-style: solid;
+    border-color: #FFF;
+    border-bottom-color: transparent;
+}
+
+.square_btn:active{ /*ボタンを押したとき*/
+    border:none;
+    -ms-transform: translate(6px,6px);
+    -webkit-transform: translate(6px,6px);
+    transform: translate(6px,6px);
+}
+
+.square_btn:active:after,.square_btn:active:before {
+    content: none;/*ボタンを押すと線が消える*/
+}

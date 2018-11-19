@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/css/bottle_ui.css">
+  </head>
+
+  <body>
+    <div class="title">ボトルチェッカー</div>
+    <div id="wrapper">
+      <div class="discription">ペットボトルのラベルを検出します。（三ツ矢サイダー、カルピスウォーター、綾鷹 に対応）</div>
+      <div class="upload">ペットボトルが写った写真をアップロードしてください</div>
+      <div id="main">
+        <div class="col-md-12" style="margin-top:10px; margin-bottom:20px;">
+              <form action="/post" method="post" class="form-inline" enctype = "multipart/form-data">
+                <input type = "file" name = "file" style="margin-top:20px;"/>
+                <div>
+                  <button type="submit" class="square_btn" style="margin-top:20px;">ペットボトルを検出開始！</button>
+                </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

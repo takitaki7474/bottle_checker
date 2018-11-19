@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../static/css/bottle_ui.css">
+  </head>
+
+  <body>
+    <div class="title">ボトルチェッカー</div>
+    <div id="wrapper">
+      <div id="main">
+        <div class="wrapper">
+          <img src={{dstimg}} class="detected_image">
+        </div>
+        <div class="col-md-12" style="margin-top:10px; margin-bottom:20px;">
+              <form action="/post" method="post" class="form-inline" enctype = "multipart/form-data">
+                <input type = "file" name = "file" style="margin-top:20px;"/>
+                <div>
+                  <button type="submit" class="square_btn" style="margin-top:20px;">ペットボトルを検出開始！</button>
+                </div>
+              </form>
+        </div>
+      </div>
+
+      <div id="sub">
+        {% if none_file != 1 %}
+          {% if result_list != [] %}
+            {% for item in result_list %}
+              <div class="sub_1_2" >
+                <div class="sub_1">
+                  <img src={{item.cut_img_url}} class="cut_img">
+                </div>
+                <div class="sub_2">
+                  <div class="table">
+                    {% for prob in item.prob%}
+                      <div class="score"><p class="bottle_name">{{bottles[loop.index0]}}</p><p class="prob">{{prob}}％</p></div>
+                    {% endfor %}
+                  </div>
+                  <div id="result"><p class="result">判定結果:</p><br><p class="result_str">「<span class="ans">{{item.ans}}</span>」</p></div>
+                </div>
+              </div>
+            {% endfor %}
+          {% elif result_list == [] %}
+            <p class="not_detect">検出できませんでした</p>
+          {% endif %}
+        {% else %}
+          <p>ファイルが読み込めません</p>
+        {% endif %}
+      </div>
+
+    </div>
+
+  </body>
+</html>
