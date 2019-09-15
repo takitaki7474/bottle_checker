@@ -1,6 +1,6 @@
 # Bottle Checker
 ## Overview
-Bottle Checker is an app that detects and classifies PET bottle images.
+Bottle Checker is an app that detects and classifies PET bottle images by machine learning.
 
 ## Description
 I created the Bottle Checker as a demonstration of object detection and image recognition.
