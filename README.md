@@ -15,7 +15,7 @@ And they trained more than 4,000 images each.
 
 ## Demo
 
-![bottleCheckerDemo](https://github.com/takitaki7474/algorithm-research/blob/master/gifs_and_images/bottle_checker.gif)
+![bottleCheckerDemo](https://github.com/takitaki7474/bottle_checker/blob/demo-images/demo-images/bottle_checker.gif)
   
 
-![bottleCheckerSample1](https://github.com/takitaki7474/algorithm-research/blob/images/bottleChecker_images/bottle_checker_sample1.png)
+![bottleCheckerSample1](https://github.com/takitaki7474/bottle_checker/blob/demo-images/demo-images/bottle_checker_sample1.png)
